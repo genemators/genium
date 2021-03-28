@@ -15,7 +15,7 @@ RUN curl https://rclone.org/install.sh | sudo bash
 
 # You can add custom software and dependencies for your environment here. Some examples:
 
-RUN find /home/coder/.local -type d -exec chmod 777 {} \;
+RUN sudo find /home/coder/.local -type d -exec chmod 777 {} \;
 RUN code-server --install-extension esbenp.prettier-vscode
 RUN code-server --install-extension equinusocio.vsc-material-theme
 RUN sudo apt-get install -y build-essential
