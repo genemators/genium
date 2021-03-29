@@ -14,7 +14,6 @@ ENV SHELL=/bin/bash
 # Install unzip + rclone (support for remote filesystem)
 RUN sudo apt-get update && sudo apt-get install unzip -y
 RUN sudo apt install bash-completion
-RUN sudo apt install bat
 RUN sudo apt install vim
 RUN curl https://rclone.org/install.sh | sudo bash
 
