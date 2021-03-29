@@ -15,6 +15,7 @@ ENV SHELL=/bin/bash
 RUN sudo apt-get update && sudo apt-get install unzip -y
 RUN sudo apt-get install bash-completion
 RUN curl https://rclone.org/install.sh | sudo bash
+RUN curl -fsSL https://deno.land/x/install/install.sh | sudo sh
 
 # You can add custom software and dependencies for your environment here. Some examples:
 RUN sudo find /home/coder/.local -type d -exec chmod 777 {} \;
