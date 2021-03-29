@@ -13,9 +13,13 @@ ENV SHELL=/bin/bash
 
 # Install unzip + rclone (support for remote filesystem)
 RUN sudo apt-get update && sudo apt-get install unzip -y
-RUN sudo apt-get install bash-completion
-RUN sudo apt-get -y install vim
-RUN sudo apt-get -y install python
+RUN sudo apt-get install dirmngr gnupg apt-transport-https ca-certificates software-properties-common -y
+RUN sudo apt-key adv --keyserver keyserver.ubuntu.com --recv-keys E298A3A825C0D65DFD57CBB651716619E084DAB9
+RUN sudo add-apt-repository 'deb https://cloud.r-project.org/bin/linux/ubuntu focal-cran40/'
+RUN sudo apt-get install r-base -y
+RUN sudo apt-get install bash-completion -y
+RUN sudo apt-get install vim -y
+RUN sudo apt-get install python -y
 RUN curl https://rclone.org/install.sh | sudo bash
 RUN curl -fsSL https://deno.land/x/install/install.sh | sudo sh
 
