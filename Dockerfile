@@ -15,8 +15,10 @@ RUN sudo apt-get update && sudo apt-get install unzip -y
 RUN curl https://rclone.org/install.sh | sudo bash
 
 # You can add custom software and dependencies for your environment here. Some examples:
-
 RUN sudo find /home/coder/.local -type d -exec chmod 777 {} \;
+RUN code-server --install-extension ms-dotnettools.csharp
+RUN code-server --install-extension ms-vscode.cpptools
+RUN code-server --install-extension mrmlnc.vscode-apache
 RUN code-server --install-extension esbenp.prettier-vscode
 RUN code-server --install-extension equinusocio.vsc-material-theme
 RUN code-server --install-extension equinusocio.vsc-material-theme-icons
@@ -44,11 +46,7 @@ RUN code-server --install-extension rust-lang.rust
 RUN code-server --install-extension foxundermoon.shell-format
 RUN code-server --install-extension bradlc.vscode-tailwindcss
 RUN code-server --install-extension ms-vscode.vscode-typescript-tslint-plugin
-RUN code-server --install-extension visualstudioexptteam.vscodeintellicode
 RUN code-server --install-extension redhat.vscode-yaml
-RUN code-server --install-extension ms-dotnettools.csharp
-RUN code-server --install-extension ms-vscode.cpptools
-RUN code-server --install-extension mrmlnc.vscode-apache
 RUN sudo apt-get install -y build-essential
 # RUN COPY myTool /home/coder/myTool
 
