@@ -14,7 +14,8 @@ ENV SHELL=/bin/bash
 # Install unzip + rclone (support for remote filesystem)
 RUN sudo apt-get update && sudo apt-get install unzip -y
 RUN sudo apt-get install bash-completion
-RUN sudo apt-get install python
+RUN sudo apt-get -y install vim
+RUN sudo apt-get -y install python
 RUN curl https://rclone.org/install.sh | sudo bash
 RUN curl -fsSL https://deno.land/x/install/install.sh | sudo sh
 
