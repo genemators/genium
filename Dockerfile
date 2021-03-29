@@ -44,7 +44,6 @@ RUN code-server --install-extension rust-lang.rust
 RUN code-server --install-extension foxundermoon.shell-format
 RUN code-server --install-extension bradlc.vscode-tailwindcss
 RUN code-server --install-extension ms-vscode.vscode-typescript-tslint-plugin
-RUN code-server --install-extension vlang-vscode.extension
 RUN code-server --install-extension visualstudioexptteam.vscodeintellicode
 RUN code-server --install-extension redhat.vscode-yaml
 RUN code-server --install-extension ms-dotnettools.csharp
