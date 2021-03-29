@@ -5,7 +5,7 @@ USER coder
 
 # Apply VS Code settings
 COPY deploy-container/settings.json .local/share/code-server/User/settings.json
-COPY deploy-container/config.yaml .local/share/code-server/config.yaml
+# COPY deploy-container/config.yaml .local/share/code-server/config.yaml
 
 # Use zsh shell
 ENV SHELL=/bin/zsh
