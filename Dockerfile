@@ -19,6 +19,7 @@ RUN curl https://rclone.org/install.sh | sudo bash
 RUN sudo find /home/coder/.local -type d -exec chmod 777 {} \;
 RUN code-server --install-extension esbenp.prettier-vscode
 RUN code-server --install-extension equinusocio.vsc-material-theme
+RUN code-server --install-extension equinusocio.vsc-material-theme-icons
 RUN sudo apt-get install -y build-essential
 # RUN COPY myTool /home/coder/myTool
 

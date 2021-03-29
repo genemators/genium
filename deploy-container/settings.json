@@ -1,7 +1,13 @@
 {
-  "workbench.colorTheme": "Default Dark+",
+  "workbench.iconTheme": "eq-material-theme-icons-darker",
+  "workbench.colorTheme": "Material Theme Darker High Contrast",
   "git.postCommitCommand": "sync",
   "git.enableSmartCommit": true,
   "git.confirmSync": false,
-  "git.autofetch": true
+  "git.autofetch": true,
+  "workbench.colorCustomizations": {},
+  "materialTheme.accent": "Remove accents",
+  "editor.semanticTokenColorCustomizations": null,
+  "editor.fontSize": 18
+  
 }
