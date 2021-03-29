@@ -31,7 +31,6 @@ RUN code-server --install-extension dbaeumer.vscode-eslint
 RUN code-server --install-extension mkxml.vscode-filesize
 RUN code-server --install-extension eamodio.gitlens
 RUN code-server --install-extension ritwickdey.liveserver
-RUN code-server --install-extension ms-vsliveshare.vsliveshare
 RUN code-server --install-extension yzhang.markdown-all-in-one
 RUN code-server --install-extension eg2.vscode-npm-script
 RUN code-server --install-extension techer.open-in-browser
