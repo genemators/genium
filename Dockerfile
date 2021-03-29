@@ -5,13 +5,17 @@ USER coder
 
 # Apply VS Code settings
 COPY deploy-container/settings.json .local/share/code-server/User/settings.json
+COPY deploy-container/.bashrc ./.bashrc
 # COPY deploy-container/config.yaml .local/share/code-server/config.yaml
 
 # Use zsh shell
-ENV SHELL=/bin/zsh
+ENV SHELL=/bin/bash
 
 # Install unzip + rclone (support for remote filesystem)
 RUN sudo apt-get update && sudo apt-get install unzip -y
+RUN sudo apt install bash-completion
+RUN sudo apt install bat
+RUN sudo apt install vim
 RUN curl https://rclone.org/install.sh | sudo bash
 
 # You can add custom software and dependencies for your environment here. Some examples:
