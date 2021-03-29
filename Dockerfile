@@ -20,6 +20,37 @@ RUN sudo find /home/coder/.local -type d -exec chmod 777 {} \;
 RUN code-server --install-extension esbenp.prettier-vscode
 RUN code-server --install-extension equinusocio.vsc-material-theme
 RUN code-server --install-extension equinusocio.vsc-material-theme-icons
+RUN code-server --install-extension TabNine.tabnine-vscode
+RUN code-server --install-extension aaron-bond.better-comments
+RUN code-server --install-extension coenraads.bracket-pair-colorizer
+RUN code-server --install-extension streetsidesoftware.code-spell-checker
+RUN code-server --install-extension denoland.vscode-deno
+RUN code-server --install-extension ms-azuretools.vscode-docker
+RUN code-server --install-extension editorconfig.editorconfig
+RUN code-server --install-extension dbaeumer.vscode-eslint
+RUN code-server --install-extension mkxml.vscode-filesize
+RUN code-server --install-extension eamodio.gitlens
+RUN code-server --install-extension ritwickdey.liveserver
+RUN code-server --install-extension ms-vsliveshare.vsliveshare
+RUN code-server --install-extension yzhang.markdown-all-in-one
+RUN code-server --install-extension eg2.vscode-npm-script
+RUN code-server --install-extension techer.open-in-browser
+RUN code-server --install-extension ionutvmi.path-autocomplete
+RUN code-server --install-extension christian-kohler.path-intellisense
+RUN code-server --install-extension alefragnani.project-manager
+RUN code-server --install-extension ms-python.python
+RUN code-server --install-extension ikuyadeu.r
+RUN code-server --install-extension humao.rest-client
+RUN code-server --install-extension rust-lang.rust
+RUN code-server --install-extension foxundermoon.shell-format
+RUN code-server --install-extension bradlc.vscode-tailwindcss
+RUN code-server --install-extension ms-vscode.vscode-typescript-tslint-plugin
+RUN code-server --install-extension vlang-vscode.extension
+RUN code-server --install-extension visualstudioexptteam.vscodeintellicode
+RUN code-server --install-extension redhat.vscode-yaml
+RUN code-server --install-extension ms-dotnettools.csharp
+RUN code-server --install-extension ms-vscode.cpptools
+RUN code-server --install-extension mrmlnc.vscode-apache
 RUN sudo apt-get install -y build-essential
 # RUN COPY myTool /home/coder/myTool
 
